@@ -1,0 +1,10 @@
+{
+    "name": "simple-node-project",
+    "version": "1.0.0",
+    "description": "A simple Node.js project to demonstrate package.json structure",
+    "main": "src/app.js",
+    "scripts": {
+        "start": "bash src/test.sh"
+    }
+
+}
