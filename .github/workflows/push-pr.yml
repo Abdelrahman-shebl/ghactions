@@ -1,16 +1,14 @@
 on:
   push:
-    branches:
-      - main
-      - "release/**"
-    
-    paths:
-      - "src/**"
-
+      branches:
+          - main
+          - "release/**"
+      paths:
+        - "src/**"
   pull_request:
-    branches:
-      - main
-      - "release/**"
+      branches:
+        - main
+        - "release/**"
 
 jobs:
   tests:
