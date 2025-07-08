@@ -10,4 +10,4 @@ jobs:
 
       steps:
         - name: print a welcome message
-          run: echo"welcome to our first job"
+          run: echo "welcome to our first job"
