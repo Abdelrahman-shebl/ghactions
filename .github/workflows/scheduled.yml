@@ -1,0 +1,10 @@
+# on:
+#   schedule:
+#     - cron: "0 8 * * 1"
+
+# jobs:
+#   daily-tasks:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: print message
+#         run: echo "Running on the scheduled task"
