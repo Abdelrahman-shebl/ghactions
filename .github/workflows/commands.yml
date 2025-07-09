@@ -1,0 +1,21 @@
+# on:
+#   workflow_dispatch:
+
+# jobs:
+#   commands:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: |
+#           deprecated=true
+#           if [[ deprected ]]
+#           then
+#             echo "::warning::Deprected found"
+#           fi
+
+#       - run: echo "API_key=12345" >> $GITHUB_ENV
+
+#       - run: echo "Again it's the key $API_key"
+
+#       - run : |
+#           echo "::add-mask::$API_key"
+#           echo "key hidden $API_key" #hidden version
