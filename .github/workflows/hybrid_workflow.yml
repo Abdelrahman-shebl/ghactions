@@ -1,0 +1,17 @@
+# on:
+#   workflow_dispatch:
+
+# jobs:
+#   hybrid_jobs:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: echo "this command runs from ubuntu vm"
+
+#       - name: run inside an alpine container
+#         uses: docker://alpine:3.14 # the image must be accessible without authentication
+#         with:
+#           entrypoint: /bin/sh
+#           args: |
+#             -c "echo 'this steps runs inside an alpine container'"
+
+        
