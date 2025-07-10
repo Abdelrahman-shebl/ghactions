@@ -8,6 +8,7 @@ jobs:
       - run: |
           echo "this is ${{ github.job }}"
           echo "hello from job1 to job2" >> file.txt
+      - run: cat file.txt
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.6.2
         with:
