@@ -6,6 +6,9 @@ on:
        - main
 jobs:
   example-jobs:
+      env:
+        github: ${{ tojson(github) }}
+      if: github.
       strategy:
         matrix: 
           os: [ubuntu-latest, windows-latest]
