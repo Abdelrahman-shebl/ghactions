@@ -31,7 +31,7 @@ jobs:
         uses: actions/download-artifact@v4.3.0
         with:
           name: file_sharing
-      - run: cat file_sharing/file.txt
+      - run: cat file.txt
 
   job_3:
     runs-on: ubuntu-latest
