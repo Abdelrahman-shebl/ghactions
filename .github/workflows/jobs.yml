@@ -5,13 +5,27 @@ jobs:
   job_1:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "this is ${{ github.job }}"
+      - run: |
+          echo "this is ${{ github.job }}"
+          echo "hello from job1 to job2" >> file.txt
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.6.2
+        with:
+          name: file_sharing
+          path: file.txt
+
+
 
   job_2:
     runs-on: ubuntu-latest
     needs: job_1
     steps:
       - run: echo "this is ${{ github.job }}"
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v4.3.0
+        with:
+          name: file_sharing
+      - run: cat "file.txt"
 
   job_3:
     runs-on: ubuntu-latest
